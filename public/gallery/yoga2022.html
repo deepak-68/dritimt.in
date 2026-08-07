@@ -1,0 +1,23 @@
+<<title>Yoga Day 2022</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/slider.js"></script>
+ <h1>Yoga Day 2022</h1>
+<div id="slider">
+  <a href="#" class="next">></a> 	<!--all ways mention control class for slider anchor -->
+  <a href="#" class="prev"><</a>	<!--all ways mention control class for slider anchor -->
+  <ul>
+    <li><img src="/gallery/img/yoga12022.jpg" width="auto" height="500"></li>
+    <li><img src="/gallery/img/yoga22022.jpg" width="auto" height="500"></li>
+    <li><img src="/gallery/img/yoga32022.jpg" width="auto" height="500"></li>
+  </ul>
+</div>
+<script>
+$("#slider").sliderNd({
+ 	delay		:	200,
+	autoplay	:	true,
+	navigation	:	true
+});
+</script>
+
+
