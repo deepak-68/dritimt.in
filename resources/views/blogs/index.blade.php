@@ -50,6 +50,7 @@
                     </td>
                     <td>{{ \Carbon\Carbon::parse($blog->created_at)->format('d-m-Y') }}</td>
                     <td>
+                        <a href="{{ route('blog.detail', $blog->slug) }}" target="_blank" class="btn btn-info btn-sm"><i class="bi bi-eye"></i> View</a>
                         <a href="{{ url('blog/edit/'.$blog->id) }}" class="btn btn-primary btn-sm"><i class="bi bi-pencil-square"></i> Edit</a>
                         <a href="{{ url('blog/delete/'.$blog->id) }}" class="btn btn-danger btn-sm" onclick="return confirm('Do you want to delete this blog?');"><i class="bi bi-trash"></i> Delete</a>
                     </td>
