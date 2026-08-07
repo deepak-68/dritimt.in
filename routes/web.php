@@ -1,14 +1,18 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RoleController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\EnquiryController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\StudentController;
-use App\Http\Controllers\EventController;
-use App\Http\Controllers\EnquiryController;
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,50 +58,63 @@ Route::get('/photos', function () { return view('frontend/photos'); });
 Route::get('/milestone', function () { return view('frontend/milestone'); });
 Route::get('/anti-ragging', function () { return view('frontend/anti-ragging'); });
 Route::get('/events', [App\Http\Controllers\FrontendController::class, 'events'])->name('events');
+Route::get('/blogs', [App\Http\Controllers\FrontendController::class, 'blogs'])->name('blogs');
 Route::get('/ceo-message', function () { return view('frontend/ceo-message'); });
 
-Route::post('/store', [App\Http\Controllers\StudentController::class, 'store'])->name('student.store');
-Route::post('/grievance', [App\Http\Controllers\StudentController::class, 'grievance'])->name('student.grievance');
-Route::post('/conact', [App\Http\Controllers\StudentController::class, 'contact'])->name('student.contact');
-Route::post('/request', [App\Http\Controllers\StudentController::class, 'request'])->name('student.request');
+Route::post('/store', [StudentController::class, 'store'])->name('student.store');
+Route::post('/grievance', [StudentController::class, 'grievance'])->name('student.grievance');
+Route::post('/conact', [StudentController::class, 'contact'])->name('student.contact');
+Route::post('/request', [StudentController::class, 'request'])->name('student.request');
 
-Route::get('/registration', [App\Http\Controllers\RegistrationController::class, 'index'])->name('registration');
-Route::get('/registration/detail/{id}', [App\Http\Controllers\RegistrationController::class, 'registration_detail'])->name('registration-detail');
-Route::post('/registration/datatable', [App\Http\Controllers\RegistrationController::class, 'RegistrationDataTable'])->name('registration.datatable');
-Route::post('/regexport',[App\Http\Controllers\RegistrationController::class,'regexport'])->name('regexport'); 
+Route::get('/registration', [RegistrationController::class, 'index'])->name('registration');
+Route::get('/registration/detail/{id}', [RegistrationController::class, 'registration_detail'])->name('registration-detail');
+Route::post('/registration/datatable', [RegistrationController::class, 'RegistrationDataTable'])->name('registration.datatable');
+Route::post('/regexport',[RegistrationController::class,'regexport'])->name('regexport'); 
 
-Route::get('/grievancelist', [App\Http\Controllers\RegistrationController::class, 'grievancelist'])->name('grievancelist');
-Route::post('/grievancelist/datatable', [App\Http\Controllers\RegistrationController::class, 'GrievanceDataTable'])->name('grievancelist.datatable');
-Route::post('/grievancexport',[App\Http\Controllers\RegistrationController::class,'grievancexport'])->name('grievancexport'); 
-Route::get('/grievance/detail/{id}', [App\Http\Controllers\RegistrationController::class, 'grievance_detail'])->name('grievance-detail');
+Route::get('/grievancelist', [RegistrationController::class, 'grievancelist'])->name('grievancelist');
+Route::post('/grievancelist/datatable', [RegistrationController::class, 'GrievanceDataTable'])->name('grievancelist.datatable');
+Route::post('/grievancexport',[RegistrationController::class,'grievancexport'])->name('grievancexport'); 
+Route::get('/grievance/detail/{id}', [RegistrationController::class, 'grievance_detail'])->name('grievance-detail');
 
-Route::get('/contact', [App\Http\Controllers\RegistrationController::class, 'contact'])->name('contact');
-Route::post('/contact/datatable', [App\Http\Controllers\RegistrationController::class, 'ContactDataTable'])->name('contact.datatable');
-Route::post('/contactexport',[App\Http\Controllers\RegistrationController::class,'contactexport'])->name('contactexport'); 
-Route::get('/contact/detail/{id}', [App\Http\Controllers\RegistrationController::class, 'contact_detail'])->name('contact-detail');
+Route::get('/contact', [RegistrationController::class, 'contact'])->name('contact');
+Route::post('/contact/datatable', [RegistrationController::class, 'ContactDataTable'])->name('contact.datatable');
+Route::post('/contactexport',[RegistrationController::class,'contactexport'])->name('contactexport'); 
+Route::get('/contact/detail/{id}', [RegistrationController::class, 'contact_detail'])->name('contact-detail');
 
-Route::get('/student_request', [App\Http\Controllers\RegistrationController::class, 'student_request'])->name('student_request');
-Route::post('/request/datatable', [App\Http\Controllers\RegistrationController::class, 'RequestDataTable'])->name('request.datatable');
-Route::post('/requestexport',[App\Http\Controllers\RegistrationController::class,'requestexport'])->name('requestexport'); 
-Route::get('/request/detail/{id}', [App\Http\Controllers\RegistrationController::class, 'request_detail'])->name('request-detail');
+Route::get('/student_request', [RegistrationController::class, 'student_request'])->name('student_request');
+Route::post('/request/datatable', [RegistrationController::class, 'RequestDataTable'])->name('request.datatable');
+Route::post('/requestexport',[RegistrationController::class,'requestexport'])->name('requestexport'); 
+Route::get('/request/detail/{id}', [RegistrationController::class, 'request_detail'])->name('request-detail');
 // for enquiry form home
 Route::post('/enquiry', [EnquiryController::class, 'store'])->name('enquiry.store');
+
+
+
+
 Auth::routes();
 
-Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('profile');
-Route::get('/setting', [App\Http\Controllers\HomeController::class, 'setting'])->name('setting');
-Route::get('/header', [App\Http\Controllers\HomeController::class, 'header'])->name('header');
-Route::put('/header/headerupdate/{id}', [App\Http\Controllers\HomeController::class, 'headerupdate']);
-Route::get('/footer', [App\Http\Controllers\HomeController::class, 'footer'])->name('footer');
-Route::put('/footer/footerupdate', [App\Http\Controllers\HomeController::class, 'footerupdate']);
+Route::get('/dashboard', [HomeController::class, 'index'])->name('home');
+Route::get('/profile', [HomeController::class, 'profile'])->name('profile');
+Route::get('/setting', [HomeController::class, 'setting'])->name('setting');
+Route::get('/header', [HomeController::class, 'header'])->name('header');
+Route::put('/header/headerupdate/{id}', [HomeController::class, 'headerupdate']);
+Route::get('/footer', [HomeController::class, 'footer'])->name('footer');
+Route::put('/footer/footerupdate', [HomeController::class, 'footerupdate']);
 
-Route::get('/event', [App\Http\Controllers\EventController::class, 'index'])->name('event');
-Route::get('/event/create', [App\Http\Controllers\EventController::class, 'create'])->name('create');
-Route::post('/event/store', [App\Http\Controllers\EventController::class, 'store'])->name('store');
-Route::get('/event/edit/{id}', [App\Http\Controllers\EventController::class, 'edit'])->name('edit');
+Route::get('/event', [EventController::class, 'index'])->name('event');
+Route::get('/event/create', [EventController::class, 'create'])->name('create');
+Route::post('/event/store', [EventController::class, 'store'])->name('store');
+Route::get('/event/edit/{id}', [EventController::class, 'edit'])->name('edit');
 Route::put('event/update/{id}', [EventController::class, 'update']);
 Route::get('event/delete/{id}', [EventController::class, 'delete']);
+
+Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create');
+Route::post('/blog/store', [BlogController::class, 'store'])->name('blog.store');
+Route::get('/blog/edit/{id}', [BlogController::class, 'edit'])->name('blog.edit');
+Route::put('blog/update/{id}', [BlogController::class, 'update']);
+Route::get('blog/delete/{id}', [BlogController::class, 'delete']);
+Route::get('/blog/{slug}', [FrontendController::class, 'blogDetail'])->name('blog.detail');
 
 Route::resources([
     'roles' => RoleController::class,

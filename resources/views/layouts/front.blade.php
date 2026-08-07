@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <title>@yield('title')</title>
+  @yield('meta')
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- General CSS Files -->
@@ -322,6 +323,7 @@ src="https://www.facebook.com/tr?id=963737626724295&ev=PageView&noscript=1"
                   </li>
                   <li><a href="{{url('/register-online')}}"><i class="fa fa-caret-right" aria-hidden="true"></i>Online
                       Registration</a></li>
+                  <li><a href="{{url('/blogs')}}"><i class="fa fa-caret-right" aria-hidden="true"></i>Blogs</a></li>
                   <li><a
                       href="https://www.google.com/maps?ll=30.534462,76.68408&z=16&t=m&hl=en&gl=IN&mapclient=embed&cid=3662721972021021721"
                       target="blank"><i class="fa fa-caret-right" aria-hidden="true"></i>Site Map</a></li>
