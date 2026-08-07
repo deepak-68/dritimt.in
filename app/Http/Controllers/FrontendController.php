@@ -24,6 +24,13 @@ class FrontendController extends Controller
     public function blogDetail($slug)
     {
         $blog = Blog::where('slug', $slug)->where('status', 'published')->firstOrFail();
-        return view('frontend.blog-detail', compact('blog'));
+        return view('frontend.blog-detail', [
+            'blog' => $blog,
+            'recentBlogs' => Blog::where('status', 'published')
+                ->where('id', '!=', $blog->id)
+                ->orderBy('id', 'DESC')
+                ->limit(5)
+                ->get(),
+        ]);
     }
 }

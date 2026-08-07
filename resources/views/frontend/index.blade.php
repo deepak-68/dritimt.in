@@ -182,7 +182,7 @@
                         growth.<br>
                         The teaching-learning process at the institution is supported by modern infrastructure and
                         innovative methodologies. The focus is on delivering a balanced and holistic education that enhances
-                        both academic knowledge and practical skills, preparing students for real-world challenges.
+                        both <a href="/blog/academic-knowledge"> academic knowledge</a> and practical skills, preparing students for real-world challenges.
                         A key strength of Dr. IT Group of Colleges lies in its commitment to student success. The
                         institution not only imparts quality education but also actively supports students in securing job
                         opportunities. With dedicated placement assistance, students and their guardians can be assured of
@@ -190,8 +190,6 @@
 
 
                     </p>
-
-
 
 
 

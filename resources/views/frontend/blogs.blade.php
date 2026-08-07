@@ -33,11 +33,13 @@
 				@forelse ($blogs as $blog)
 				<div class="col-lg-4 col-md-6 mb-4">
 					<div class="news-card">
-						@if ($blog->image)
-							<a href="{{ route('blog.detail', $blog->slug) }}">
+						<a href="{{ route('blog.detail', $blog->slug) }}">
+							@if ($blog->image)
 								<img src="{{ asset($blog->image) }}" class="img-fluid" alt="{{ $blog->title }}">
-							</a>
-						@endif
+							@else
+								<img src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23eef2f6%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22%2394a3b8%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3ENo Image%3C/text%3E%3C/svg%3E" class="img-fluid" alt="{{ $blog->title }}">
+							@endif
+						</a>
 						<div class="news-content">
 							<span class="news-tag">{{ \Carbon\Carbon::parse($blog->created_at)->format('F d, Y') }}</span>
 							<h5><a href="{{ route('blog.detail', $blog->slug) }}">{{ $blog->title }}</a></h5>

@@ -1,4 +1,4 @@
-<div class="main-sidebar sidebar-style-2">
+<i class="fas fa-edit"></i><div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
       <div class="sidebar-brand mt-2">
         <a href="{{ route('home') }}"><img src="{{url('backend\assets\img/logo.gif')}}"></a>
@@ -21,7 +21,7 @@
        <li class="{{ Route::is('grievancelist')  ? 'active' : '' }}"><a class="nav-link" href="{{ route('grievancelist') }}"><i class="fas fa-exclamation-circle"></i> Grievance</a></li>
        <li class="{{ Route::is('student_request')  ? 'active' : '' }}"><a class="nav-link" href="{{ route('student_request') }}"><i class="fas fa-user-graduate"></i> Student Request</a></li>
        <li class="{{ Route::is('event')  ? 'active' : '' }}"><a class="nav-link" href="{{ route('event') }}"><i class="fas fa-calendar-alt"></i> Events</a></li>
-       <li class="{{ Route::is('blog*')  ? 'active' : '' }}"><a class="nav-link" href="{{ route('blog') }}"><i class="fas fa-blog"></i> Blogs</a></li>
+       <li class="{{ Route::is('blog*')  ? 'active' : '' }}"><a class="nav-link" href="{{ route('blog') }}"><i class="fas fa-edit"></i> Blogs</a></li>
        <li class="dropdown {{ Route::is('users.*') || Route::is('roles.*') || Route::is('permissions.*') ? 'active' : '' }}">
           <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-users"></i> <span>User</span></a>
           <ul class="dropdown-menu">
