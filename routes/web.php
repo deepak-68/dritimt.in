@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\RegistrationController;
@@ -56,6 +58,7 @@ Route::get('/photos', function () { return view('frontend/photos'); });
 Route::get('/milestone', function () { return view('frontend/milestone'); });
 Route::get('/anti-ragging', function () { return view('frontend/anti-ragging'); });
 Route::get('/events', [App\Http\Controllers\FrontendController::class, 'events'])->name('events');
+Route::get('/blogs', [App\Http\Controllers\FrontendController::class, 'blogs'])->name('blogs');
 Route::get('/ceo-message', function () { return view('frontend/ceo-message'); });
 
 Route::post('/store', [StudentController::class, 'store'])->name('student.store');
@@ -104,6 +107,14 @@ Route::post('/event/store', [EventController::class, 'store'])->name('store');
 Route::get('/event/edit/{id}', [EventController::class, 'edit'])->name('edit');
 Route::put('event/update/{id}', [EventController::class, 'update']);
 Route::get('event/delete/{id}', [EventController::class, 'delete']);
+
+Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create');
+Route::post('/blog/store', [BlogController::class, 'store'])->name('blog.store');
+Route::get('/blog/edit/{id}', [BlogController::class, 'edit'])->name('blog.edit');
+Route::put('blog/update/{id}', [BlogController::class, 'update']);
+Route::get('blog/delete/{id}', [BlogController::class, 'delete']);
+Route::get('/blog/{slug}', [FrontendController::class, 'blogDetail'])->name('blog.detail');
 
 Route::resources([
     'roles' => RoleController::class,
