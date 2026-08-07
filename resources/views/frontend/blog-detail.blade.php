@@ -1,5 +1,10 @@
 @extends('layouts.front')
-@section('title', $blog->title)
+@section('title', $blog->meta_title ?: $blog->title)
+@section('meta')
+    <meta name="title" content="{{ $blog->meta_title ?: $blog->title }}">
+    <meta name="description" content="{{ $blog->meta_description ?: \Illuminate\Support\Str::limit(strip_tags($blog->content), 160) }}">
+    <meta name="keywords" content="{{ $blog->meta_keywords ?: implode(', ', array_slice(preg_split('/[\s,]+/', preg_replace('/[^\p{L}\p{N}\s-]/u', '', $blog->title)), 0, 5)) }}">
+@endsection
 @section('content')
 	<!-- Breadcrumbs -->
 	<div class="breadcrumbs overlay">

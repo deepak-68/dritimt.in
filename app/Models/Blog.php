@@ -20,6 +20,9 @@ class Blog extends Model
         'content',
         'image',
         'status',
+        'meta_title',
+        'meta_description',
+        'meta_keywords',
     ];
 
     public function user()

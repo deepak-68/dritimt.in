@@ -70,6 +70,48 @@
                                 </div>
                             </div>
 
+                            <hr>
+
+                            <div class="mb-3 row">
+                                <div class="col-md-12">
+                                    <h5>SEO (Meta Tags)</h5>
+                                    <p class="text-muted"><small>Used for search engines. Leave blank to auto-generate from title &amp; content.</small></p>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="meta_title" class="col-md-4 col-form-label text-md-end text-start">Meta Title</label>
+                                <div class="col-md-6">
+                                  <input type="text" class="form-control @error('meta_title') is-invalid @enderror" id="meta_title" name="meta_title" value="{{ old('meta_title', $blog->meta_title) }}" maxlength="70">
+                                  <small class="text-muted"><span id="meta_title_count">0</span>/70 characters (50-60 recommended)</small>
+                                    @if ($errors->has('meta_title'))
+                                        <span class="text-danger">{{ $errors->first('meta_title') }}</span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="meta_description" class="col-md-4 col-form-label text-md-end text-start">Meta Description</label>
+                                <div class="col-md-6">
+                                  <textarea class="form-control @error('meta_description') is-invalid @enderror" id="meta_description" name="meta_description" rows="3" maxlength="160">{{ old('meta_description', $blog->meta_description) }}</textarea>
+                                  <small class="text-muted"><span id="meta_description_count">0</span>/160 characters (150-160 recommended)</small>
+                                    @if ($errors->has('meta_description'))
+                                        <span class="text-danger">{{ $errors->first('meta_description') }}</span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                <label for="meta_keywords" class="col-md-4 col-form-label text-md-end text-start">Meta Keywords</label>
+                                <div class="col-md-6">
+                                  <input type="text" class="form-control @error('meta_keywords') is-invalid @enderror" id="meta_keywords" name="meta_keywords" value="{{ old('meta_keywords', $blog->meta_keywords) }}">
+                                  <small class="text-muted">Comma-separated keywords, e.g. admission, college, placement</small>
+                                    @if ($errors->has('meta_keywords'))
+                                        <span class="text-danger">{{ $errors->first('meta_keywords') }}</span>
+                                    @endif
+                                </div>
+                            </div>
+
                             <div class="mb-3 row">
                                 <input type="submit" class="col-md-3 offset-md-5 btn btn-primary" value="Update Blog">
                             </div>
@@ -87,6 +129,28 @@
         $(document).ready(function() {
             $('.summernote').summernote({
                 height: 250
+            });
+
+            function updateCount(selector, label) {
+                $(label).text($(selector).val().length);
+            }
+
+            $('#meta_title').on('input', function() { updateCount('#meta_title', '#meta_title_count'); });
+            $('#meta_description').on('input', function() { updateCount('#meta_description', '#meta_description_count'); });
+            updateCount('#meta_title', '#meta_title_count');
+            updateCount('#meta_description', '#meta_description_count');
+
+            $('#title').on('input', function() {
+                if ($('#meta_title').val().trim() === '') {
+                    $('#meta_title').val($(this).val()).trigger('input');
+                }
+            });
+
+            $('#content').on('summernote.change', function() {
+                if ($('#meta_description').val().trim() === '') {
+                    var plain = $('<div>' + $(this).summernote('code') + '</div>').text().trim().replace(/\s+/g, ' ');
+                    $('#meta_description').val(plain.slice(0, 160)).trigger('input');
+                }
             });
         });
     </script>

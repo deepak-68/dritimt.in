@@ -49,6 +49,9 @@ class BlogController extends Controller
             'title' => 'required|string|max:255',
             'content' => 'nullable|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
+            'meta_title' => 'nullable|string|max:70',
+            'meta_description' => 'nullable|string|max:160',
+            'meta_keywords' => 'nullable|string|max:255',
         ]);
 
         $input = $request->all();
@@ -84,12 +87,18 @@ class BlogController extends Controller
             'title' => 'required|string|max:255',
             'content' => 'nullable|string',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
+            'meta_title' => 'nullable|string|max:70',
+            'meta_description' => 'nullable|string|max:160',
+            'meta_keywords' => 'nullable|string|max:255',
         ]);
 
         $blog->title = $request->input('title');
         $blog->slug = $this->uniqueSlug($request->input('title'), $blog->id);
         $blog->content = $request->input('content');
         $blog->status = $request->input('status');
+        $blog->meta_title = $request->input('meta_title');
+        $blog->meta_description = $request->input('meta_description');
+        $blog->meta_keywords = $request->input('meta_keywords');
 
         if ($request->hasFile('image')) {
             $this->deleteImage($blog->image);
