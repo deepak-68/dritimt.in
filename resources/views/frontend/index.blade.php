@@ -173,17 +173,17 @@
                     </h2>
 
                     <p class="home_about_text" align="justify">
-                        When it comes to quality education, Dr. IT Group of Colleges stands as a trusted and reputed name.
-                        The institution operates under the esteemed Dr. ITM Limited Group, an ISO 9001:2015 certified
+                        When it comes to quality education, Dr IT Group of Colleges stands as a trusted and reputed name.
+                        The institution operates under the esteemed Dr ITM Limited Group, an ISO 9001:2015 certified
                         organization, ensuring high standards in both education and management.
-                        Dr. IT Group of Colleges is located in the serene, eco-friendly, and pollution-free environment of
+                        Dr IT Group of Colleges is located in the serene, eco-friendly, and pollution-free environment of
                         Banur, near Chandigarh. This peaceful setting provides an ideal atmosphere for learning and
                         contributes to the overall development of students, making it a perfect place for academic
                         growth.<br>
                         The teaching-learning process at the institution is supported by modern infrastructure and
                         innovative methodologies. The focus is on delivering a balanced and holistic education that enhances
                         both <a href="/blog/academic-knowledge"> academic knowledge</a> and practical skills, preparing students for real-world challenges.
-                        A key strength of Dr. IT Group of Colleges lies in its commitment to student success. The
+                        A key strength of Dr IT Group of Colleges lies in its commitment to student success. The
                         institution not only imparts quality education but also actively supports students in securing job
                         opportunities. With dedicated placement assistance, students and their guardians can be assured of
                         strong career guidance and support for a successful future.
@@ -379,7 +379,7 @@
 
                             <p class="news-date">March 04, 2026</p>
 
-                            <p align="justify">Holi was celebrated with great enthusiasm at Dr. IT Group of Colleges,
+                            <p align="justify">Holi was celebrated with great enthusiasm at Dr IT Group of Colleges,
                                 spreading colors of
                                 joy and unity. </p>
 

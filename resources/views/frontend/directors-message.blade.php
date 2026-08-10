@@ -50,8 +50,8 @@
 					</h2>
 					<div class="choose-right">
 						<p align="justify">
-							At Dr. IT Group of Colleges, we are committed to delivering quality education that empowers
-							students to achieve academic excellence and build successful careers. Backed by Dr. ITM Limited
+							At Dr IT Group of Colleges, we are committed to delivering quality education that empowers
+							students to achieve academic excellence and build successful careers. Backed by Dr ITM Limited
 							Group, the institution stands as a trusted name in higher education.
 							<br>
 							Located in the serene and eco-friendly surroundings of Banur near Chandigarh, our campus
@@ -63,7 +63,7 @@
 							nurturing skills, creativity, and critical thinking to prepare students for real-world
 							challenges.
 							<br>
-							At Dr. IT Group of Colleges, we go beyond academics by emphasizing career readiness. With
+							At Dr IT Group of Colleges, we go beyond academics by emphasizing career readiness. With
 							dedicated placement support and industry-oriented training, we ensure that students are
 							well-prepared to secure rewarding opportunities and succeed in their professional journey.
 							We remain committed to guiding our students towards excellence and helping them build a strong

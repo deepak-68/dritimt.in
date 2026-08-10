@@ -23,7 +23,7 @@
     <section id="gx-album-page " class="Feautes section mt-5">
 
         <div class=" col-12 text-center ">
-            <span class="tag">Dr. IT Album </span>
+            <span class="tag">Dr IT Album </span>
             <h2 class="home_about_title ">
                 Capturing Moments, Creating Memories
             </h2>

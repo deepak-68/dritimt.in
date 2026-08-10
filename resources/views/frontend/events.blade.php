@@ -47,7 +47,7 @@
 
 							<p class="news-date">March 04, 2026</p>
 
-							<p>Holi was celebrated with great enthusiasm at Dr. IT Group of Colleges, spreading colors of
+							<p>Holi was celebrated with great enthusiasm at Dr IT Group of Colleges, spreading colors of
 								joy and unity. </p>
 
 						</div>
@@ -127,7 +127,7 @@
 
 							<p class="news-date">January 26, 2026</p>
 
-							<p>Republic Day was celebrated with great enthusiasm at Dr. IT Group of Colleges, showcasing the spirit of unity and patriotism.
+							<p>Republic Day was celebrated with great enthusiasm at Dr IT Group of Colleges, showcasing the spirit of unity and patriotism.
 							</p>
 
 						</div>

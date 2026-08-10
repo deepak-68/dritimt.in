@@ -28,7 +28,7 @@
 					<div class="col-lg-12 col-12 text-center">
 						<h2><span>Diploma in Computer Science Engineering</span></h2>
 						<img src="{{ asset('frontend/img/CSEP.jpg')}}" class="my-3 ">
-						<p class="text-left">Computer Science engineering (CSE) deals with design, implementation, and management of information system of both software & hardware processes. A computer scientist specializes in the theory of computation and design of computational systems. The diploma in Computer Science Engineering at Dr. IT College of Polytechnic is approved by AICTE and is affiliated to Punjab State Board of Technical Education and Industrial Training. The course duration is three years divided into 6 semesters.</p>
+						<p class="text-left">Computer Science engineering (CSE) deals with design, implementation, and management of information system of both software & hardware processes. A computer scientist specializes in the theory of computation and design of computational systems. The diploma in Computer Science Engineering at Dr IT College of Polytechnic is approved by AICTE and is affiliated to Punjab State Board of Technical Education and Industrial Training. The course duration is three years divided into 6 semesters.</p>
 
 						<h2 class="mt-3"><span>Recruitment</span></h2>
 						<p class="text-left">After the completion of the diploma in Computer Science Engineering, the students are able to work as software engineer, hardware engineer, networking engineer, software tester, App developer, web designer etc. These jobs are available in both public as well as private sector.</p>

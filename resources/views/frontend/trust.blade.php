@@ -72,7 +72,7 @@
 
 				<div class="trust-box">
 					<p align="justify">
-						Dr. IT Group of Colleges, functioning under the aegis of the trust, is promoted by Dr ITM Limited,
+						Dr IT Group of Colleges, functioning under the aegis of the trust, is promoted by Dr ITM Limited,
 						an ISO 9001:2008 certified company with a strong presence in Chandigarh, Mohali, Noida, Greater
 						Noida, Jaipur, and other regions. The group is actively engaged in IT, ITES, management,
 						consultancy, and professional education.
@@ -90,7 +90,7 @@
 
 				<div class="trust-box">
 					<p align="justify">
-						Under the dynamic leadership of Dr. Mahajan and experienced academic guidance, the institution
+						Under the dynamic leadership of Dr Mahajan and experienced academic guidance, the institution
 						ensures continuous innovation in teaching and learning. It aims to develop students into confident
 						individuals capable of facing global challenges while upholding strong ethical and cultural values.
 					</p>
@@ -98,7 +98,7 @@
 
 				<div class="trust-box">
 					<p align="justify">
-						Dr. IT Group of Colleges is dedicated to imparting quality education in management and technology,
+						Dr IT Group of Colleges is dedicated to imparting quality education in management and technology,
 						combined with strong human values. The institution nurtures professionals who are skilled,
 						compassionate, and innovative, empowering them to contribute meaningfully to society and shape a
 						better future.

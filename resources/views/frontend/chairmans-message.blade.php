@@ -50,7 +50,7 @@
 					<div class="choose-right text-center">
 
 						<p class="text" align="justify">
-							At Dr. IT Group of Colleges, we firmly believe that education is the most powerful tool to shape
+							At Dr IT Group of Colleges, we firmly believe that education is the most powerful tool to shape
 							not only successful careers but also responsible and enlightened individuals. Our vision is to
 							create a dynamic learning environment where knowledge, innovation, and values come together to
 							prepare students for the challenges of an ever-evolving world.
@@ -70,7 +70,7 @@
 							innovative teaching methodologies, industry exposure, and skill-based learning, we ensure that
 							our students are well-prepared to meet global standards and excel in their chosen fields.
 							<br>
-							At Dr. IT Group of Colleges, we also focus on fostering a culture of innovation, creativity, and
+							At Dr IT Group of Colleges, we also focus on fostering a culture of innovation, creativity, and
 							continuous improvement. We encourage students to think independently, take initiative, and
 							explore new possibilities. Our goal is to nurture future leaders, entrepreneurs, and
 							professionals who are confident, competent, and capable of making a positive impact in the
@@ -82,7 +82,7 @@
 							<br>
 							As we continue our journey of excellence, we remain committed to providing quality education and
 							shaping bright futures. I extend my heartfelt blessings and best wishes to all students and
-							members of the Dr. IT family for their continued success and growth.
+							members of the Dr IT family for their continued success and growth.
 
 						</p><br>
 

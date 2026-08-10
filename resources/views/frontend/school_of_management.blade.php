@@ -26,7 +26,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-12 text-center">
-					<h2>Dr. IT Insititue of <span>Management & Technology</span></h2>
+					<h2>Dr IT Insititue of <span>Management & Technology</span></h2>
 					<h3>Mandatory Disclosure for the year 2026-2027</h3>
 
 					<div class="table-responsive-custom">
