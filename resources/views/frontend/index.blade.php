@@ -456,29 +456,29 @@
             <div class="govSocialCard">
                 <h3 class="govSocialTitle">Facebook</h3>
                <div class="govSocialFrame">
-    <div id="fb-root"></div>
+                    <div id="fb-root"></div>
 
-    <div class="fb-page"
-        data-href="https://www.facebook.com/dritgroupofcolleges/"
-        data-tabs="timeline"
-        data-width="500"
-        data-height="700"
-        data-small-header="false"
-        data-adapt-container-width="true"
-        data-hide-cover="false"
-        data-show-facepile="true">
+                    <div class="fb-page"
+                        data-href="https://www.facebook.com/dritgroupofcolleges/"
+                        data-tabs="timeline"
+                        data-width="500"
+                        data-height="700"
+                        data-small-header="false"
+                        data-adapt-container-width="true"
+                        data-hide-cover="false"
+                        data-show-facepile="true">
 
-        <blockquote
-            cite="https://www.facebook.com/dritgroupofcolleges/"
-            class="fb-xfbml-parse-ignore">
+                        <blockquote
+                            cite="https://www.facebook.com/dritgroupofcolleges/"
+                            class="fb-xfbml-parse-ignore">
 
-            <a href="https://www.facebook.com/dritgroupofcolleges/">
-                DR IT Group of Colleges
-            </a>
+                            <a href="https://www.facebook.com/dritgroupofcolleges/">
+                                DR IT Group of Colleges
+                            </a>
 
-        </blockquote>
-    </div>
-</div>
+                        </blockquote>
+                    </div>
+                </div>
             </div>
 
             <div class="govSocialCard">
