@@ -219,8 +219,8 @@ src="https://www.facebook.com/tr?id=963737626724295&ev=PageView&noscript=1"
                         <li><a href="{{url('directors-message')}}"> Principal / Director's Message</a></li>
                         <li><a href="{{url('vision-mission')}}">Vision and Mission</a></li>
                         <li><a href="{{url('trust')}}">The Trust</a></li>
-                        <li><a href="{{url('school_of_business')}}">Dr. IT School of Business</a></li>
-                        <li><a href="{{url('school_of_management')}}">Dr. IT School of MGT & TECH</a></li>
+                        <li><a href="{{url('school_of_business')}}">Dr IT School of Business</a></li>
+                        <li><a href="{{url('school_of_management')}}">Dr IT School of MGT & TECH</a></li>
                         <li><a href="{{url('regulatory-committees')}}">Regulatory Committees</a></li>
                       </ul>
                     </li>
