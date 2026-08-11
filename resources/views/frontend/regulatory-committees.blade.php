@@ -39,7 +39,7 @@
 					<table class="table">
 						<thead style="background-color:#f5812d; color: #fff;">
 							<tr>
-								<th colspan="2" class="text-center">Dr.IT School of Business</th>
+								<th colspan="2" class="text-center">Dr IT School of Business</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -71,7 +71,7 @@
 					<table class="table">
 						<thead style="background-color:#f5812d; color: #fff;">
 							<tr>
-								<th colspan="2" class="text-center">Dr. IT Insititue Of Management &amp; Technology</th>
+								<th colspan="2" class="text-center">Dr IT Insititue Of Management &amp; Technology</th>
 
 
 							</tr>

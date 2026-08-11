@@ -67,7 +67,7 @@
 							<h2 class="home_about_title mb-4">
 								<span>Library</span>
 							</h2>
-							<p class="text-justify my-3">The library at Dr. IT Group of Colleges helps the students in
+							<p class="text-justify my-3">The library at Dr IT Group of Colleges helps the students in
 								increasing
 								their knowledge with almost 8000 books. There are books related to all the subjects related
 								to
@@ -108,7 +108,7 @@
 							<h2 class="home_about_title mb-4">
 								<span>GYM</span>
 							</h2>
-							<p class="text-justify my-3">We, at Dr. IT Group of Colleges emphasize upon mental as well as
+							<p class="text-justify my-3">We, at Dr IT Group of Colleges emphasize upon mental as well as
 								physical
 								well being. A well equipped Gym on the campus ensures that everyone on the campus is
 								Healthy-Wealthy

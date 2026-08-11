@@ -26,7 +26,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-12 text-center">
-					<span class="tag">Dr. IT School of Business</span>
+					<span class="tag">Dr IT School of Business</span>
 					<h2 class="home_about_title mb-4">
 						 Mandatory Disclosure for the year 2026-2027
 					</h2>
